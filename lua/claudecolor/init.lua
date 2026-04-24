@@ -11,10 +11,10 @@ function M.load(variant)
   if vim.g.colors_name then vim.cmd("hi clear") end
   if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
 
-  vim.g.colors_name = "claude"
+  vim.g.colors_name = "claudecolor"
   vim.o.termguicolors = true
 
-  local p = require("claude.palette")[variant]
+  local p = require("claudecolor.palette")[variant]
 
   -- Editor UI
   hl("Normal",       { fg = p.fg, bg = p.bg })

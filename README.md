@@ -1,4 +1,4 @@
-# claude.nvim
+# claudecolor.nvim
 
 A Neovim colorscheme inspired by the Claude website — warm cream/ink paper aesthetic with a terracotta accent. Light and dark variants.
 
@@ -6,20 +6,20 @@ A Neovim colorscheme inspired by the Claude website — warm cream/ink paper aes
 
 ```lua
 {
-  "Aevox121/claude.nvim",
+  "Aevox121/claudecolor.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("claude-light") -- or "claude-dark" / "claude"
+    vim.cmd.colorscheme("claudecolor-light") -- or "claudecolor-dark" / "claudecolor"
   end,
 }
 ```
 
 ## Variants
 
-- `claude-light` — warm cream paper (`#FAF9F5`)
-- `claude-dark` — warm dark ink (`#262624`)
-- `claude` — follows `vim.o.background`
+- `claudecolor-light` — warm cream paper (`#FAF9F5`)
+- `claudecolor-dark` — warm dark ink (`#262624`)
+- `claudecolor` — follows `vim.o.background`
 
 ## Status
 
