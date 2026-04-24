@@ -166,6 +166,7 @@ function M.load(variant)
   hl("@markup.strikethrough",  { fg = p.fg_dim, strikethrough = true })
   hl("@markup.link",           { fg = p.blue, underline = true })
   hl("@markup.link.url",       { fg = p.blue, underline = true })
+  hl("@markup.link.label",     { fg = p.blue, underline = true })
   hl("@markup.raw",            { fg = p.accent, bg = p.bg_alt })
   hl("@markup.raw.block",      { bg = p.bg_alt })
   hl("@markup.quote",          { fg = p.fg_dim, italic = true })
@@ -255,6 +256,18 @@ function M.load(variant)
   hl("IblIndent",     { fg = p.fg_faint })
   hl("IblScope",      { fg = p.fg_subtle })
   hl("IblWhitespace", { fg = p.fg_faint })
+
+  -- render-markdown.nvim (links & wiki links)
+  hl("RenderMarkdownLink",     { fg = p.blue, underline = true })
+  hl("RenderMarkdownWikiLink", { fg = p.blue, underline = true })
+
+  -- Obsidian.nvim (future-proof, user has obsidian-link.nvim but may add obsidian.nvim)
+  hl("ObsidianRefText",     { fg = p.blue, underline = true })
+  hl("ObsidianExtLinkIcon", { fg = p.fg_dim })
+  hl("ObsidianTag",         { fg = p.accent })
+  hl("ObsidianTodo",        { fg = p.accent, bold = true })
+  hl("ObsidianDone",        { fg = p.green })
+  hl("ObsidianHighlightText", { fg = p.accent, bg = p.bg_alt })
 end
 
 return M
