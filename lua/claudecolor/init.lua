@@ -5,7 +5,7 @@ local function hl(group, spec)
 end
 
 function M.load(variant)
-  variant = variant or (vim.o.background == "dark" and "dark" or "light")
+  variant = variant or (vim.o.background == "light" and "light" or "dark")
   vim.o.background = variant
 
   if vim.g.colors_name then vim.cmd("hi clear") end

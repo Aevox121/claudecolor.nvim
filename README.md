@@ -10,7 +10,7 @@ A Neovim colorscheme inspired by the Claude website — warm cream/ink paper aes
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("claudecolor-light") -- or "claudecolor-dark" / "claudecolor"
+    vim.cmd.colorscheme("claudecolor-dark") -- or "claudecolor-light" / "claudecolor"
   end,
 }
 ```
@@ -19,7 +19,7 @@ A Neovim colorscheme inspired by the Claude website — warm cream/ink paper aes
 
 - `claudecolor-light` — warm cream paper (`#FAF9F5`)
 - `claudecolor-dark` — warm dark ink (`#262624`)
-- `claudecolor` — follows `vim.o.background`
+- `claudecolor` — follows `vim.o.background` (defaults to dark when unset)
 
 ## Status
 
